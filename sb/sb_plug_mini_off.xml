@@ -1,8 +1,8 @@
 <macro name="turnoff_sb_plug_mini" icon="LED_OFF">
    <assert-service description="Ensure cba20d00-224d-11e6-9fb8-0002a5d5c51b service" uuid="cba20d00-224d-11e6-9fb8-0002a5d5c51b">
-      <assert-characteristic description="Ensure cba20003-224d-11e6-9fb8-0002a5d5c51b characteristic" uuid="cba20003-224d-11e6-9fb8-0002a5d5c51b">
+      <assert-characteristic description="Ensure cba20002-224d-11e6-9fb8-0002a5d5c51b characteristic" uuid="cba20002-224d-11e6-9fb8-0002a5d5c51b">
          <property name="WRITE" requirement="MANDATORY"/>
       </assert-characteristic>
    </assert-service>
-   <write description="Send OFF request" characteristic-uuid="cba20003-224d-11e6-9fb8-0002a5d5c51b" service-uuid="cba20d00-224d-11e6-9fb8-0002a5d5c51b" value="570f50010100" type="WRITE_REQUEST"/>
+   <write description="Send OFF request" characteristic-uuid="cba20002-224d-11e6-9fb8-0002a5d5c51b" service-uuid="cba20d00-224d-11e6-9fb8-0002a5d5c51b" value="570f50010100" type="WRITE_REQUEST"/>
 </macro>
